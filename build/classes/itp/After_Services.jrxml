@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="After_Services" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="93833b85-7475-4c77-b065-dd4ecb09f728">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="service_id" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     after_service_details.`service_id` AS after_service_details_service_id,
+     after_service_details.`customer_id` AS after_service_details_customer_id,
+     after_service_details.`group_no` AS after_service_details_group_no,
+     after_service_details.`dates` AS after_service_details_dates,
+     after_service_details.`warranty_left` AS after_service_details_warranty_left,
+     after_service_details.`item` AS after_service_details_item,
+     after_service_details.`use_qty_1` AS after_service_details_use_qty_1,
+     after_service_details.`description_1` AS after_service_details_description_1,
+     after_service_details.`price_1` AS after_service_details_price_1,
+     after_service_details.`item_no_2` AS after_service_details_item_no_2,
+     after_service_details.`use_qty_2` AS after_service_details_use_qty_2,
+     after_service_details.`description_2` AS after_service_details_description_2,
+     after_service_details.`price_2` AS after_service_details_price_2,
+     after_service_details.`item_no_3` AS after_service_details_item_no_3,
+     after_service_details.`use_qty_3` AS after_service_details_use_qty_3,
+     after_service_details.`description_3` AS after_service_details_description_3,
+     after_service_details.`price_3` AS after_service_details_price_3,
+     after_service_details.`item_no_4` AS after_service_details_item_no_4,
+     after_service_details.`use_qty_4` AS after_service_details_use_qty_4,
+     after_service_details.`description_4` AS after_service_details_description_4,
+     after_service_details.`price_4` AS after_service_details_price_4,
+     after_service_details.`item_no_5` AS after_service_details_item_no_5,
+     after_service_details.`use_qty_5` AS after_service_details_use_qty_5,
+     after_service_details.`description_5` AS after_service_details_description_5,
+     after_service_details.`price_5` AS after_service_details_price_5,
+     after_service_details.`washing_qty` AS after_service_details_washing_qty,
+     after_service_details.`no_of_items` AS after_service_details_no_of_items,
+     after_service_details.`w_price` AS after_service_details_w_price,
+     after_service_details.`service_charge` AS after_service_details_service_charge,
+     after_service_details.`distance` AS after_service_details_distance,
+     after_service_details.`d_price` AS after_service_details_d_price,
+     after_service_details.`total_charge` AS after_service_details_total_charge,
+     after_service_details.`cash_payment` AS after_service_details_cash_payment,
+     after_service_details.`balance` AS after_service_details_balance
+FROM
+     `after_service_details` after_service_details
+where
+after_service_details.`service_id`=$P{service_id}]]>
+	</queryString>
+	<field name="after_service_details_service_id" class="java.lang.String"/>
+	<field name="after_service_details_customer_id" class="java.lang.String"/>
+	<field name="after_service_details_group_no" class="java.lang.String"/>
+	<field name="after_service_details_dates" class="java.lang.String"/>
+	<field name="after_service_details_warranty_left" class="java.lang.String"/>
+	<field name="after_service_details_item" class="java.lang.String"/>
+	<field name="after_service_details_use_qty_1" class="java.lang.String"/>
+	<field name="after_service_details_description_1" class="java.lang.String"/>
+	<field name="after_service_details_price_1" class="java.lang.String"/>
+	<field name="after_service_details_item_no_2" class="java.lang.String"/>
+	<field name="after_service_details_use_qty_2" class="java.lang.String"/>
+	<field name="after_service_details_description_2" class="java.lang.String"/>
+	<field name="after_service_details_price_2" class="java.lang.String"/>
+	<field name="after_service_details_item_no_3" class="java.lang.String"/>
+	<field name="after_service_details_use_qty_3" class="java.lang.String"/>
+	<field name="after_service_details_description_3" class="java.lang.String"/>
+	<field name="after_service_details_price_3" class="java.lang.String"/>
+	<field name="after_service_details_item_no_4" class="java.lang.String"/>
+	<field name="after_service_details_use_qty_4" class="java.lang.String"/>
+	<field name="after_service_details_description_4" class="java.lang.String"/>
+	<field name="after_service_details_price_4" class="java.lang.String"/>
+	<field name="after_service_details_item_no_5" class="java.lang.String"/>
+	<field name="after_service_details_use_qty_5" class="java.lang.String"/>
+	<field name="after_service_details_description_5" class="java.lang.String"/>
+	<field name="after_service_details_price_5" class="java.lang.String"/>
+	<field name="after_service_details_washing_qty" class="java.lang.String"/>
+	<field name="after_service_details_no_of_items" class="java.lang.String"/>
+	<field name="after_service_details_w_price" class="java.lang.String"/>
+	<field name="after_service_details_service_charge" class="java.lang.String"/>
+	<field name="after_service_details_distance" class="java.lang.String"/>
+	<field name="after_service_details_d_price" class="java.lang.String"/>
+	<field name="after_service_details_total_charge" class="java.lang.String"/>
+	<field name="after_service_details_cash_payment" class="java.lang.String"/>
+	<field name="after_service_details_balance" class="java.lang.String"/>
+	<group name="after_service_details_service_id">
+		<groupExpression><![CDATA[$F{after_service_details_service_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="142" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="3" width="300" height="129" backcolor="#000000" uuid="9d2324e2-83e4-44bc-8b7c-6e0209490f81"/>
+				<imageExpression><![CDATA["C:\\Users\\tj.rumesh\\Desktop\\suntex.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="409" y="41" width="230" height="27" uuid="d9bea64f-f253-4cfd-8721-e51ae11cc161"/>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUNTEX WEAVING]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="68" width="266" height="30" uuid="88f2e982-79eb-48b7-98f8-5974961f8043"/>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="20"/>
+				</textElement>
+				<text><![CDATA[INDUSTRIES (PVT) Ltd.]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="642" y="112" width="160" height="20" uuid="d6ac298d-fd03-41e4-9621-7ddc4e7f9d41"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="130" width="801" height="2" uuid="97ed9f18-bce2-4589-837a-b3aaa298a8ff"/>
+			</line>
+			<line>
+				<reportElement x="1" y="2" width="801" height="1" uuid="9f5eb2c7-701c-46a0-a21e-bf8265f3bbb8"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="300" y="0" width="198" height="20" uuid="e7b5b567-ee3b-48e1-b72e-c30c1d85a29b"/>
+				<textElement>
+					<font fontName="Berlin Sans FB Demi" size="14"/>
+				</textElement>
+				<text><![CDATA[After Services Details]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="73" height="20" uuid="75dac81c-8bdb-4f8d-b8a2-aebaa8f863d8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Service ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="0" width="71" height="20" uuid="b8658c36-069f-43f7-ba13-f5b1aaa02b3d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Customer ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="84" height="20" uuid="0e381999-cf37-438f-b5ca-863d7a810412"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Group ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="64" height="20" uuid="d3a6eeb0-1ef9-47e3-ba4f-10c6510e443c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="0" width="74" height="20" uuid="9b0cbe2c-b1b3-4dc7-bd1e-c0cae4017e2a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Warranty Left]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="0" width="75" height="20" uuid="43a48421-f42c-4fda-a578-e53b432545e2"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Service Cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="0" width="70" height="20" uuid="cebc38a0-7305-4b72-b20c-df6d7d8fbb45"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Washing Cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="511" y="0" width="64" height="20" uuid="05c906bb-7b38-4cec-a8d7-6c65d5617ab8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Dist. Charge]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="575" y="0" width="67" height="20" uuid="181ea33c-3e68-475f-a0c7-374e664a7e9e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Total Cost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="642" y="0" width="74" height="20" uuid="d75f5cc3-b90c-4ddd-b392-e80177a619f3"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Cash Payment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="716" y="0" width="86" height="20" uuid="77d27c6c-6ed2-45ba-a2cf-5add27a60b8a"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Balance]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="73" height="20" uuid="2f560c83-ed0b-472d-9b00-bea55078b8b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_service_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="73" y="0" width="71" height="20" uuid="360a0486-2a97-4f00-b14f-10c6318f9445"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_customer_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="84" height="20" uuid="af7d0e42-19ce-40e6-a6ae-71afd3fbb48c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_group_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="64" height="20" uuid="4550bcb6-2915-45c9-b19c-75add5009326"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_dates}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="0" width="74" height="20" uuid="0acd19a6-ada3-4475-9345-214d343926d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_warranty_left}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="366" y="0" width="75" height="20" uuid="a2da4477-38d6-41dd-bb89-e1a061f260c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_service_charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="441" y="0" width="70" height="20" uuid="85bdcf07-7a96-4a9c-9876-250e05d10148"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_w_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="511" y="0" width="64" height="20" uuid="bb25bb01-ca52-47a2-9704-9391e707a2f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_d_price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="575" y="0" width="67" height="20" uuid="cf3938f2-ea87-487a-b9d6-2e896ee22c97"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_total_charge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="642" y="0" width="74" height="20" uuid="79266b42-5c94-4f7b-861d-7d432b16779e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_cash_payment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="716" y="0" width="86" height="20" uuid="e1f139d2-6296-48f3-bac5-c07ac4f4c17d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{after_service_details_balance}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
